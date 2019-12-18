@@ -1,0 +1,7 @@
+This is a short demo of our project. 
+First we start our flask server. Follow the app route to the localhost directory.
+Here is our homepage, user can upload their image and check for the lipstick.
+After the processing, the result will be return accroding to their similarity.
+Then, user can use information they get to further search for the lipstick's detail 
+such as price and where to buy.
+They can always upload another photo to find the matching lipstick.

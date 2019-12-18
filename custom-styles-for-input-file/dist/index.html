@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Custom styles for Input file</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Flat UI - Custom Input:file</h1>
+<h2>With JS return</h2>
+
+<form action="http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data"">
+  <div class="input-file-container">  
+    <input class="input-file" id="my-file" type="file" name="file">
+    <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+	<input type = "submit"/>
+  </div>
+  <p class="file-return"></p>
+</form>
+
+<p class="txtcenter">It's just a test, not really usable.<br />Works on IE &gt; 8 and modern browsers</p>
+<p class="txtcenter copy">by <a href="https://twitter.com/geoffreycrofte">@geoffreycrofte</a><br />see also <a href="https://codepen.io/CreativeJuiz/pen/uEHeD">Custom input:file with CSS only</a></p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+  
+</body>
+</html>

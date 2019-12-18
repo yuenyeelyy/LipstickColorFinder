@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<header class="w3-container w3-red">
+  <h1>Your Result</h1>
+</header>
+
+<div class="w3-container">
+  <p></p>    
+<a href="http://localhost:5000/">Upload more</a>
+  <table class="w3-table w3-bordered w3-striped">
+    <thead>
+      <tr>
+        <th>Possible Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1. {{ result_information }}</td>
+      </tr>
+	  <tr>
+        <td>2.{{ result_information1 }}</td>
+      </tr>
+	  <tr>
+        <td>3.{{ result_information2 }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-half">
+    <div class="w3-card">
+      <img src="{{ url_for('static', filename='source.jpg') }}" alt="London" style="width:100%">
+      <div class="w3-container">
+        <h2 align="center">Uploaded image</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-card">
+      <img src="{{ url_for('static', filename='source2.jpg') }}" alt="London" style="width:100%">
+      <div class="w3-container">
+        <h2 align="center">Face recognition</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-container w3-red w3-margin-top">
+  <h5>COMP3122</h5>
+  
+</footer>
+
+</body>
+</html>

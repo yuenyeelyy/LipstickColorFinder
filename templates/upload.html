@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Custom styles for Input file</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+	<style>
+      .img-container {
+        text-align: center;
+        display: block;
+      }
+    </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+    <span class="img-container"> <!-- Inline parent element -->
+      <img src="{{ url_for('static', filename='BG.jpeg') }}" alt="London" width="500"></img>
+    </span>
+
+<form action="http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+  <div class="input-file-container">  
+    <input class="input-file" id="my-file" type="file" name="file">
+    <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+	<br>
+	<input type = "submit"/>
+  </div>
+  <p class="file-return"></p>
+</form>
+
+<p class="txtcenter">Get color.</p>
+
+
+<script type=text/javascript src="{{  url_for('static', filename='js/script.js') }}"></script>
+  
+</body>
+</html>
